@@ -1,10 +1,10 @@
-# Dividcoin
+# Dividtract (Divident Payout Contract)
 ##### This is a pet project for getting hands on with SmartContracts development. And may never see the light of day.
 
 
 ### UseCase
 
-- The intent of the coin is to payout dividends to it's board of directors (A hypothetical set of people).
+- The intent of this contract is to payout dividends to it's board of directors (A hypothetical set of people).
   - This can be further generalised to all the shareholders in an organisation.
 - The Profit made by an organisation can be transferred to this Contract account & will further be paid out as dividends to board members.
 
@@ -34,5 +34,5 @@
 
 Note: 
 - Ir-respective of whether the member was kicked out or they themselves resigned, their initial deposit will be refunded to their address.
-- Currency of token is Ethereum.
+- Currency for this contract is Ethereum.
 
