@@ -10,6 +10,8 @@
 
 
 ### Functionalities
+- Dividend payout will be triggered as soon as Profits are added to the contract.
+- Once a dividend is paid out, emit an event for the subscribers to make aware of the transaction.
 
 - `addProfits(uint64 profit) public`
   - The profits made by an organisation can be depositted in this account by using this method, which will further be paid out as dividends.
@@ -28,8 +30,6 @@
 - `ResignFromBoard(uint16 member_id)`
    - Allows a member to resign from the board and make room for new member.
 
-- Dividend payout will be triggered as soon as Profits are added to the contract.
-- Once a dividend is paid out, emit an event for the subscribers to make aware of the transaction.
 
 Note: 
 - Ir-respective of whether the investor was kicked out or they themselves resigned, their initial investment will be refunded to their address.
