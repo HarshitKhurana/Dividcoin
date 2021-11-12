@@ -32,5 +32,5 @@
 
 Note: 
 - Ir-respective of whether the member was kicked out or they themselves resigned, their initial deposit will be refunded to their address.
-- Depsit amount is in ether.
+- Currency of token is Ethereum.
 
