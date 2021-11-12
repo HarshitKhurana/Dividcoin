@@ -4,9 +4,9 @@
 
 ### UseCase
 
-- The intent of this contract is to payout dividends to it's board of directors (A hypothetical set of people).
+- The intent of this contract is to payout dividends to it's investors (A hypothetical set of people).
   - This can be further generalised to all the shareholders in an organisation.
-- The Profit made by an organisation can be transferred to this Contract account & will further be paid out as dividends to board members.
+- The Profit made by an organisation can be transferred to this Contract account & will further be paid out as dividends to all investors.
 
 
 ### Functionalities
@@ -17,22 +17,20 @@
 - `addMember(uint16 member_id) onlyOwner`
   - Only the contract owner can add a member to the table, contingent upon the `BoardTable` not being full already.
 
-- `registerMember(uint16 member_id, unit64 deposit)`
-  - Once the contract owner has added a member, the member needs to register themeselves by paying in a deposit amount. (no min/max limit on deposit)
-  - The dividends received by the member will be proportionate to this deposit amount.
+- `registerMember(uint16 member_id, unit64 investment)`
+  - Once the contract owner has added a member, the member needs to register themeselves by paying in a deposit amount called investment. (no min/max limit on investment)
+  - The dividends received by the member will be proportionate to their investment.
   - Dividends can only be paid out to registered members.
 
 - `KickoutMember(uint16 member_id) onlyOwner`
-  - Only the owner of the contract can kickout a member from the table.
+  - Only the owner of the contract can kickout a member from the `BoardTable`.
 
-- `resignFromBoard(uint16 member_id)`
+- `ResignFromBoard(uint16 member_id)`
    - Allows a member to resign from the board and make room for new member.
 
 - Dividend payout will be triggered as soon as Profits are added to the contract.
 - Once a dividend is paid out, emit an event for the subscribers to make aware of the transaction.
 
-
 Note: 
-- Ir-respective of whether the member was kicked out or they themselves resigned, their initial deposit will be refunded to their address.
+- Ir-respective of whether the investor was kicked out or they themselves resigned, their initial investment will be refunded to their address.
 - Currency for this contract is Ethereum.
-
