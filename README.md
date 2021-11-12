@@ -28,6 +28,8 @@
 - `resignFromBoard(uint16 member_id)`
    - Allows a member to resign from the board and make room for new member.
 
+- Dividend payout will be triggered as soon as Profits are added to the contract.
+- Once a dividend is paid out, emit an event for the subscribers to make aware of the transaction.
 
 
 Note: 
